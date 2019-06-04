@@ -1,0 +1,15 @@
+<div *ngIf="user">
+  <div class="userImg">
+    <img [src]="user.avatar_url">
+  </div>
+  <div class="userDetail">
+    <span> Full Name: {{user.name}} </span>
+    <span> Username: {{user.login}} </span>
+    <span > Email: {{user.email}} </span>
+    <a [href]="user.html_url">Profile GitHub</a>
+    <span> Repositories: {{user.public_repos}} </span>
+    <span> Followers: {{user.followers}} </span>
+    <span> Location: {{user.location}} </span>
+  </div>
+  <i class="fa-star" (click)="onFavoriteManagement(user)" [ngClass]="{fas: user.isFavorite, far: !user.isFavorite}"></i>
+</div>

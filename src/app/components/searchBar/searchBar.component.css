@@ -1,0 +1,27 @@
+:host {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 10px 0;
+}
+
+:host > div {
+  display: flex;
+}
+
+button {
+  height: 50px;
+  margin: 0 0 0 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -3px 4px 8px -2px rgba(0,0,0,0.35);
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  flex: 1;
+  height: 30px;
+  margin: 7px 0 0 0;
+  font-size: 20px;
+}

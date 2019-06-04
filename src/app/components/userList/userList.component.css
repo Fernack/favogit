@@ -1,0 +1,74 @@
+:host, table , tbody, tr {
+  display: flex;
+  max-height: 100%;
+}
+
+table, tbody {
+  flex: 1;
+  flex-direction: column;
+  overflow: auto;
+  padding-bottom: 60px;
+}
+
+tr {
+  display: flex;
+  flex-direction: row;
+}
+
+tbody tr:hover {
+  background-color: rgba(247, 167, 167, 0.82);
+  box-shadow: -12px -2px 27px 0px rgba(0,0,0,0.35);
+  border-radius: 10px;
+}
+
+td, th {
+  text-align: center;
+  flex: 1;
+}
+
+thead th {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  margin-left: 1px;
+}
+
+thead tr th.sortable {
+  cursor: pointer;
+}
+
+thead tr th.sortable:hover {
+  background-color: lightgray;
+}
+
+tbody img {
+  border-radius: 50%;
+  width: 30%;
+}
+
+td {
+  display: block;
+  align-items: center;
+  font-size: 20px;
+  overflow: hidden;
+  margin: auto 0 auto 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.fa-star, .fa-address-card {
+  cursor: pointer;
+}
+
+.far:hover, .fas:hover {
+  color: white !important;
+}
+
+.fas.fa-star {
+  color: #dede54;
+}
+
+tbody .noFound {
+  font-size: 30px;
+  margin-top: 15px;
+}

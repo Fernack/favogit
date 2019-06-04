@@ -1,0 +1,11 @@
+:host {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: indianred;
+}
+
+.principal {
+  flex: 1;
+}

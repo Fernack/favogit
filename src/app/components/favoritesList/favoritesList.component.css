@@ -1,0 +1,51 @@
+:host {
+  flex: 1;
+  background-color: lightgray;
+  max-width: 30%;
+  min-width: 350px;
+  box-shadow: -12px -2px 27px 0px rgba(0,0,0,0.35);
+  margin: 0 0 0 10px;
+}
+
+ul {
+  padding: 0;
+}
+
+ul > li {
+  list-style: none;
+  display: flex;
+  height: 60px;
+  background-color: gray;
+  border-radius: 10px;
+  box-shadow: -3px 4px 8px -2px rgba(0,0,0,0.35);
+  margin: 0 10px 0 10px;
+  padding: 1px;
+  color: white;
+}
+
+ul > li:hover {
+  background-color: lightblue;
+}
+
+ul > li > span {
+  font-size: 25px;
+  padding-top: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+ul > li > img {
+  margin: 10px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+ul > li > i {
+  cursor: pointer;
+  margin: 13px 10px 0 auto;
+}
+
+ul > li > i:hover {
+  color: red;
+}

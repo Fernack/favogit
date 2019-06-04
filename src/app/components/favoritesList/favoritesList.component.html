@@ -1,0 +1,7 @@
+<ul *ngFor="let favorite of favorites$ | async">
+  <li>
+    <img [src]="favorite.avatar_url">
+    <span> {{ favorite.name }} </span>
+    <i (click)="onRemoveFavorite(favorite)" class="far fa-trash-alt fa-2x"> </i>
+  </li>
+</ul>

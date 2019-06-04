@@ -1,0 +1,32 @@
+<table>
+  <thead>
+    <tr>
+      <th>Avatar</th>
+      <th (click)="sortBy()" class="sortable"> Name
+        <i class="fas fa-lg" [ngClass]="{'fa-sort': sorted ===null, 'fa-sort-up': sorted ===true, 'fa-sort-down': sorted ===false}">
+        </i>
+      </th>
+      <th>Username</th>
+      <th>Created at</th>
+      <th>Followers</th>
+      <th>Profile</th>
+      <th>Favorite</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users$ | async">
+      <td> <img [src]="user.avatar_url"> </td>
+      <td>  {{ user.name }}  </td>
+      <td> {{ user.login }} </td>
+      <td> {{ user.created_at | date }} </td>
+      <td> {{ user.followers }} </td>
+      <td>
+        <i routerLink="/profile/{{user.login}}" class="far fa-address-card fa-2x"></i>
+      </td>
+      <td (click)="onFavoriteManagement(user)">
+        <i class="far fa-star fa-2x" [ngClass]="{fas: user.isFavorite}"></i>
+      </td>
+    </tr>
+    <div class="noFound" *ngIf="(users$ | async)?.length==0">No users found.</div>
+  </tbody>
+</table>
