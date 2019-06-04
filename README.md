@@ -42,4 +42,5 @@ Cabe destacar, que la función de favoritos, no está relacionada para nada con 
 esto quiere decir, que al momento de recargar la pantalla o el sistema, los favoritos
 elegidos en algún momento desaparecen.
 
+![](https://github.com/Fernack/favogit/blob/master/demo.gif)
 
