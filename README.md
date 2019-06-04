@@ -1,27 +1,45 @@
 # Favogit
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+La idea es programar un buscador, que al ingresar texto devuelva como resultado la
+lista de usuarios de github que contienen el texto ingresado en su username​. Esto
+debería devolver una lista, que se podrá cambiar el orden alfabético ASC o DESC.
+Veremos algunos datos interesantes de su perfil, y un link para ver el perfil del usuario​.
+Este último link, debería abrir el perfil en el sistema con algunos datos más traídos de
+github.
+También tendremos un botón de ‘favoritos’ donde podremos agregar los usuarios que
+vayamos navegando.
+El sistema debería utilizar llamadas a la api de github.
 
-## Development server
+## Pantalla inicial 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+El inicio debería ser una pantalla vacía, sin resultados, con una barra grande de
+búsqueda. La barra de búsqueda debe estar presente en toda pantalla de la aplicación.
+Al escribir en esta barra y presionar ‘enter’, debería traerme un listado con todos los
+usuarios que contengan​ el texto ingresado en su nombre, apellido o username.
+Este listado debe ser ordenable alfabéticamente de manera ascendente o
+descendente. Se debe poder cambiar el orden de alguna forma.
+Cada ítem de la lista, tendrá datos del usuario como por ejemplo: avatar, nombre,
+apellido, username, fecha de suscripción, cantidad de followers y algún otro dato que
+considere importante. También se podrá agregar/sacar usuarios como favoritos.
+La aplicación también debería informar cuántos usuarios encontró.
+El ítem debe tener un link al perfil.
+Nota: Si hay más de 20 usuarios mostrar solo los primeros 20.
 
-## Code scaffolding
+## El perfil
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+El perfil aparece cuando se clickeó un usuario de la lista.
+El perfil debe contener datos como: avatar, nombres, username, email, link al perfil en
+github, repos que el usuario tiene, followers, location y demás datos que considere
+relevantes.
+El perfil debe tener un botón para agregar/quitar a mis favoritos en el sistema..
 
-## Build
+## Favoritos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Esto será un ícono omnipresente en el sistema (como la búsqueda), que listará todos
+los usuarios que hemos agregado a favoritos.
+Aquí tendremos la opción de borrar usuarios de favoritos.
+Cabe destacar, que la función de favoritos, no está relacionada para nada con github,
+esto quiere decir, que al momento de recargar la pantalla o el sistema, los favoritos
+elegidos en algún momento desaparecen.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
