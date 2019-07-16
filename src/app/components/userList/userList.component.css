@@ -1,13 +1,14 @@
 :host, table , tbody, tr {
   display: flex;
   max-height: 100%;
+  flex-direction: column;
+  margin-right: 5px; 
 }
 
 table, tbody {
   flex: 1;
-  flex-direction: column;
   overflow: auto;
-  padding-bottom: 60px;
+  padding-bottom: 75px;
 }
 
 tr {
@@ -68,7 +69,8 @@ td {
   color: #dede54;
 }
 
-tbody .noFound {
+.noFound {
+  flex: 1;
   font-size: 30px;
-  margin-top: 15px;
+  margin-bottom: 15px;
 }

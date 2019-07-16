@@ -1,4 +1,7 @@
-<table>
+<div class="noFound" *ngIf="(numberUsers$ | async) == 0">No users found.</div>
+<div class="noFound" *ngIf="(numberUsers$ | async) !== 0">{{numberUsers$ | async }} users found.</div>
+
+<table *ngIf="(numberUsers$ | async) !==0 ">
   <thead>
     <tr>
       <th>Avatar</th>
@@ -27,6 +30,5 @@
         <i class="far fa-star fa-2x" [ngClass]="{fas: user.isFavorite}"></i>
       </td>
     </tr>
-    <div class="noFound" *ngIf="(users$ | async)?.length==0">No users found.</div>
   </tbody>
 </table>

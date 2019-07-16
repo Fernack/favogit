@@ -12,6 +12,7 @@ import { Observable } from 'rxjs';
 
 export class UserListComponent implements OnInit {
   private users$: Observable<User[]>;
+  private numberUsers$: Observable<number>;
   private sorted : boolean = null;
 
   constructor(private userService: UserService, private favoriteService: FavoriteService) {}
@@ -22,6 +23,7 @@ export class UserListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.numberUsers$ = this.userService.getNumberUsers();
     this.users$ = this.userService.getUsers();
   }
 
