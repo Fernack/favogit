@@ -1,46 +1,21 @@
-# Favogit
+# Favogit - Angular
 
-La idea es programar un buscador, que al ingresar texto devuelva como resultado la
-lista de usuarios de github que contienen el texto ingresado en su username​. Esto
-debería devolver una lista, que se podrá cambiar el orden alfabético ASC o DESC.
-Veremos algunos datos interesantes de su perfil, y un link para ver el perfil del usuario​.
-Este último link, debería abrir el perfil en el sistema con algunos datos más traídos de
-github.
-También tendremos un botón de ‘favoritos’ donde podremos agregar los usuarios que
-vayamos navegando.
-El sistema debería utilizar llamadas a la api de github.
+The idea is to program a search engine, that when entering text returns as a result the list of github users that contain the text entered in their username. This should return a list, which you can change the alphabetical order ASC or DESC.
+We will see some interesting information about their profile, and a link to view the user's profile. This last link, should open the profile in the system with some more data brought in from github.
+We will also have a 'favorites' button where we can add the users we are browsing. we browse.
 
-## Pantalla inicial 
+The system should use calls to the github api.
 
-El inicio debería ser una pantalla vacía, sin resultados, con una barra grande de
-búsqueda. La barra de búsqueda debe estar presente en toda pantalla de la aplicación.
-Al escribir en esta barra y presionar ‘enter’, debería traerme un listado con todos los
-usuarios que contengan​ el texto ingresado en su nombre, apellido o username.
-Este listado debe ser ordenable alfabéticamente de manera ascendente o
-descendente. Se debe poder cambiar el orden de alguna forma.
-Cada ítem de la lista, tendrá datos del usuario como por ejemplo: avatar, nombre,
-apellido, username, fecha de suscripción, cantidad de followers y algún otro dato que
-considere importante. También se podrá agregar/sacar usuarios como favoritos.
-La aplicación también debería informar cuántos usuarios encontró.
-El ítem debe tener un link al perfil.
-Nota: Si hay más de 20 usuarios mostrar solo los primeros 20.
+## Home screen
+The home screen should be an empty screen, with no results, with a large search bar. The search bar should be present on every screen of the application. When typing in this bar and pressing 'enter', it should bring up a list of all users that contain the text entered in their first name, last name or username. This list should be sortable alphabetically in ascending or descending order. It must be possible to change the order in some way. Each item in the list will have user data such as: avatar, name, surname, username, subscription date, number of followers and any other data you consider important. You will also be able to add/remove users as favorites. The application should also report how many users it has found. The item should have a link to the profile.
 
-## El perfil
+Note: If there are more than 20 users show only the first 20.
 
-El perfil aparece cuando se clickeó un usuario de la lista.
-El perfil debe contener datos como: avatar, nombres, username, email, link al perfil en
-github, repos que el usuario tiene, followers, location y demás datos que considere
-relevantes.
-El perfil debe tener un botón para agregar/quitar a mis favoritos en el sistema..
+## Profile
 
-## Favoritos
+The profile appears when a user is clicked from the list. The profile must contain data such as: avatar, names, username, email, link to the profile in github, repos that the user has, followers, location and other data that you consider relevant. The profile must have a button to add/remove to my favorites in the system.
 
-Esto será un ícono omnipresente en el sistema (como la búsqueda), que listará todos
-los usuarios que hemos agregado a favoritos.
-Aquí tendremos la opción de borrar usuarios de favoritos.
-Cabe destacar, que la función de favoritos, no está relacionada para nada con github,
-esto quiere decir, que al momento de recargar la pantalla o el sistema, los favoritos
-elegidos en algún momento desaparecen.
+## Favorites
+This will be an icon always visible throughout the system (like the search), which will list all the users we have added to favorites. Here we will have the option to delete users from favorites. It should be noted that the favorites function is not related to github at all, meaning that when you reload the screen or the system, the chosen favorites will disappear at some point.
 
 ![](https://github.com/Fernack/favogit/blob/master/demo.gif)
-
